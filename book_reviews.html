@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book_reviews.html">Book Reviews</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reviews-hero">
+        <h1>Book Reviews</h1>
+        <p>Read reviews of your favorite books or leave your own thoughts!</p>
+    </section>
+
+    <section class="book-review-list">
+        <h2>Latest Reviews</h2>
+        <div class="review">
+            <h3>Book Title: The Great Gatsby</h3>
+            <p><strong>Review by:</strong> John Doe</p>
+            <p><strong>Rating:</strong> ★★★★☆</p>
+            <p><strong>Review:</strong> This book offers a compelling story about the American dream. The writing is excellent, and the characters are complex and relatable. A must-read for anyone interested in classic literature.</p>
+        </div>
+
+        <div class="review">
+            <h3>Book Title: 1984</h3>
+            <p><strong>Review by:</strong> Jane Smith</p>
+            <p><strong>Rating:</strong> ★★★★★</p>
+            <p><strong>Review:</strong> Orwell’s dystopian world is terrifying and thought-provoking. The themes of surveillance, totalitarianism, and freedom remain as relevant today as they were when the book was written. A timeless classic!</p>
+        </div>
+
+        <div class="review">
+            <h3>Book Title: To Kill a Mockingbird</h3>
+            <p><strong>Review by:</strong> Emily Johnson</p>
+            <p><strong>Rating:</strong> ★★★★★</p>
+            <p><strong>Review:</strong> A beautifully written novel that explores racial injustice in America. The characters are memorable, and the themes are still highly relevant in today’s society. Highly recommended!</p>
+        </div>
+    </section>
+
+    <section class="add-review">
+        <h2>Leave Your Review</h2>
+        <form action="submit_review.php" method="POST">
+            <div class="form-group">
+                <label for="book-title">Book Title</label>
+                <input type="text" id="book-title" name="book-title" required>
+            </div>
+            <div class="form-group">
+                <label for="reviewer-name">Your Name</label>
+                <input type="text" id="reviewer-name" name="reviewer-name" required>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="review">Your Review</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Book Reviews | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
